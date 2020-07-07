@@ -1,10 +1,10 @@
 import tweepy 
   
 # Exo valei ta dika mou credentials apo to api tou tweeter
-consumer_key = "oUNpdHhYxlZ4zgP512hQmbeQv" 
-consumer_secret = "D4hpg7NknxXHKqkGrUk9EWhP2CvaXugk6hHH5fIs1KtT3ZbMkF"
-access_key = "2244306962-u4g6aFDGMScsd6vFBueT50uViY5gXC8BY8tg3yn"
-access_secret = "dJ5ADGg97QnMgdyVXe1qhgHLCU39vTnmYyUas59OEPVWh"
+consumer_key = "" 
+consumer_secret = ""
+access_key = ""
+access_secret = ""
   
 # Function to extract tweets 
 def get_tweets(username): 
