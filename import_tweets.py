@@ -21,6 +21,7 @@ def get_tweets(userID):
         tweets = api.user_timeline(screen_name= userID, count=50, include_rts = False, tweet_mode = 'extended')
         # Empty Array 
         tmp=[]  
+        str1 = " " 
         
   
         # create array of tweet information: username,  
@@ -30,14 +31,13 @@ def get_tweets(userID):
   
             # Appending tweets to the empty array tmp 
             tmp.append(j.full_text)
-            
-  
+
         # Printing the tweets 
         print(tmp)
-        x=len(tmp)
+        y = str1.join(tmp) 
+        x=len(y.split())
         print(x)
-    
-  
+
 # Driver code 
 if __name__ == '__main__': 
   
