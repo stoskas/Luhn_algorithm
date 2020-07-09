@@ -22,27 +22,50 @@ def get_tweets(userID):
         # Empty Array 
         tmp=[]  
         str1 = " " 
-        
-  
-        # create array of tweet information: username,  
-        # tweet id, date/time, text 
-        # tweets_for_csv = [tweet.text for tweet in tweets] # CSV file created  
+
+        # Appending tweets to the empty array tmp 
         for j in tweets: 
-  
-            # Appending tweets to the empty array tmp 
             tmp.append(j.full_text)
 
-        # Printing the tweets 
+        # Printing tweets 
         print(tmp)
         y = str1.join(tmp) 
-        x=len(y.split())
-        print(x)
+        get_tweets.x=len(y.split())
+        # print(x)
 
 # Driver code 
 if __name__ == '__main__': 
-  
-    # Here goes the twitter handle for the user 
-    # whose tweets are to be extracted. 
-    get_tweets("Spiliopoulos_A")  
+    print("***************************************************************************")
+    print("***************************************************************************")
+    print("************************** Welcome to my program **************************")
+    print("***************************************************************************")
+    print("***************************************************************************")
+    print("\n\n!!!'Import_tweets' is a python program which compares the last 50 tweets from two users.!!!")
+    username1 = input("\nPlease enter 1st Twitter's user name (exclude'@') :")
+    username2 = input("\nPlease enter 2nd Twitter's user name (exclude'@') :")
+    get_tweets(username1)
+    ela = get_tweets.x
+    print(get_tweets.x)
+    get_tweets(username2)
+    pou = get_tweets.x
+    print(get_tweets.x)
 
-   
+    if ela>pou:
+        print(username1 +" used more words than " + username2)
+    else:
+        print(username2 + ' used more words than '+ username1)
+
+     
+    
+    
+    
+    
+
+
+
+
+  
+  
+    
+
+
