@@ -41,8 +41,8 @@ if __name__ == '__main__':
     print("***************************************************************************")
     print("***************************************************************************")
     print("\n\n!!!'Import_tweets' is a python program which compares the last 50 tweets from two users.!!!")
-    username1 = input("\nPlease enter 1st Twitter's user name (exclude'@') :")
-    username2 = input("\nPlease enter 2nd Twitter's user name (exclude'@') :")
+    username1 = input("\nPlease enter 1st Twitter's user name (You can find it below profile pic. Don't forget to exclude'@') :")
+    username2 = input("\nPlease enter 2nd Twitter's user name (You can find it below profile pic. Don't forget to exclude'@') :")
     get_tweets(username1)
     ela = get_tweets.x
     print(get_tweets.x)
